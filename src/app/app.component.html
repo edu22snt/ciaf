@@ -11,42 +11,27 @@
   <div style="padding-left: 5%;"></div>
 
   <div class="spaceButtonAdmin">
-    <p-button routerLink="agenda" label="Agenda"></p-button>
+    <p-button routerLink="agenda" label="Agenda" icon="pi pi-calendar"></p-button>
   </div>
 
   <div class="spaceButtonAdmin" *ngIf="isAdimin">
-    <p-button routerLink="funcionario" label="Funcionário"></p-button>
+    <p-button routerLink="funcionario" label="Funcionário" icon="pi pi-user"></p-button>
   </div>
 
   <div class="spaceButtonAdmin" *ngIf="isAdimin">
-    <button
-      class="sizeButtonAdmin btn btn-primary"
-      type="button"
-      routerLink="aluno"
-      >
-      <span>Aluno</span>
-    </button>
+    <p-button routerLink="aluno" label="Aluno" icon="pi pi-user"></p-button>
   </div>
 
   <div class="spaceButtonAdmin" *ngIf="isAdimin">
-    <button
-      class="sizeButtonAdmin btn btn-primary"
-      type="button"
-      routerLink="modalidade"
-      >
-      <span>Modalidade</span>
-    </button>
+    <p-button routerLink="modalidade" label="Modalidade" icon="pi pi-globe"></p-button>
   </div>
 
   <div class="spaceButtonAdmin" *ngIf="isAdimin">
-    <button
-      class="sizeButtonAdmin btn btn-primary"
-      type="button"
-      routerLink="financeiro"
-      >
-      <span>Financeiro</span>
-    </button>
+    <p-button routerLink="financeiro" label="Financeiro" icon="pi pi-dollar"></p-button>
   </div>
+
+
+
 
   <div class="spacer"></div>
     <a aria-label="Angular on Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/ciafvalparaiso/" title="Instragram">

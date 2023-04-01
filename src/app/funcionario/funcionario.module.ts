@@ -4,8 +4,9 @@ import { FuncionarioListComponent } from './funcionario-list/funcionario-list.co
 import { FuncionarioCreateComponent } from './funcionario-create/funcionario-create.component';
 import { FuncionarioDeleteComponent } from './funcionario-delete/funcionario-delete.component';
 import { FuncionarioUpdateComponent } from './funcionario-update/funcionario-update.component';
-
-
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { FuncionarioRoutingModule } from './route/funcionario-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,10 @@ import { FuncionarioUpdateComponent } from './funcionario-update/funcionario-upd
     FuncionarioUpdateComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TableModule,
+    ButtonModule,
+    FuncionarioRoutingModule
   ]
 })
 export class FuncionarioModule { }

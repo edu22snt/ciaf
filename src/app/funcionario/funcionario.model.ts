@@ -15,7 +15,7 @@ export interface IFuncionario {
     dataInativo?: Date,
 }
 
-export class Aluno implements IFuncionario {
+export class Funcionario implements IFuncionario {
     constructor(
         public id?: number,
         public nome?: string,

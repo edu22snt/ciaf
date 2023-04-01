@@ -4,6 +4,10 @@ import { ModalidadeUpdateComponent } from './modalidade-update/modalidade-update
 import { ModalidadeListComponent } from './modalidade-list/modalidade-list.component';
 import { ModalidadeDeleteComponent } from './modalidade-delete/modalidade-delete.component';
 import { ModalidadeCreateComponent } from './modalidade-create/modalidade-create.component';
+import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { ModalidadeRoutingModule } from './route/modalidade-routing.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +17,10 @@ import { ModalidadeCreateComponent } from './modalidade-create/modalidade-create
     ModalidadeUpdateComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TableModule,
+    ButtonModule,
+    ModalidadeRoutingModule
   ]
 })
 export class ModalidadeModule { }

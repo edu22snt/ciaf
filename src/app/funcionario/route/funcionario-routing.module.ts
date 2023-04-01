@@ -4,8 +4,13 @@ import { FuncionarioCreateComponent } from '../funcionario-create/funcionario-cr
 import { FuncionarioDeleteComponent } from '../funcionario-delete/funcionario-delete.component';
 import { FuncionarioUpdateComponent } from '../funcionario-update/funcionario-update.component';
 import { FuncionarioService } from '../service/funcionario.service';
+import { AppComponent } from 'src/app/app.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: AppComponent
+  },
   {
     path: 'create',
     component: FuncionarioCreateComponent,
@@ -33,4 +38,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class FuncionarioRoutingModule { }

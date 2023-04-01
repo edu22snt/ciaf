@@ -4,14 +4,16 @@ import { AlunoCreateComponent } from '../aluno-create/aluno-create.component';
 import { AlunoDeleteComponent } from '../aluno-delete/aluno-delete.component';
 import { AlunoUpdateComponent } from '../aluno-update/aluno-update.component';
 import { AlunoService } from '../service/aluno.service';
+import { AppComponent } from 'src/app/app.component';
 
 const routes: Routes = [
   {
-    path: 'create',
+    path: '',
+    component: AppComponent
+  },
+  {
+    path: 'createAluno',
     component: AlunoCreateComponent,
-    resolve:{
-      aluno: AlunoService
-    }
   },
   {
     path: ':id/delete',
@@ -33,4 +35,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AlunoRoutingModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Modalidade } from '../modalidade.model';
 
 @Component({
   selector: 'app-modalidade-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modalidade-list.component.css']
 })
 export class ModalidadeListComponent implements OnInit {
+
+  modalidades!: Modalidade[];
 
   constructor() { }
 

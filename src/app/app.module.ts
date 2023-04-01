@@ -11,6 +11,7 @@ import { ModalidadeModule } from './modalidade/modalidade.module';
 import { AgendaModule } from './agenda/agenda.module';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
+import { TabMenuModule } from 'primeng/tabmenu';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TableModule } from 'primeng/table';
     ModalidadeModule,
     AgendaModule,
     ButtonModule,
-    TableModule
+    TableModule,
+    TabMenuModule
   ],
   exports:[
     ButtonModule

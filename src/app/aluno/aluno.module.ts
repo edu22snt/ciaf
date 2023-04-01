@@ -5,6 +5,8 @@ import { AlunoDeleteComponent } from './aluno-delete/aluno-delete.component';
 import { AlunoListComponent } from './aluno-list/aluno-list.component';
 import { AlunoUpdateComponent } from './aluno-update/aluno-update.component';
 import { TableModule } from 'primeng/table';
+import { ButtonModule } from 'primeng/button';
+import { AlunoRoutingModule } from './route/aluno-routing.module';
 @NgModule({
   declarations: [
     AlunoCreateComponent,
@@ -14,7 +16,9 @@ import { TableModule } from 'primeng/table';
   ],
   imports: [
     CommonModule,
-    TableModule
+    TableModule,
+    ButtonModule,
+    AlunoRoutingModule
   ]
 })
 export class AlunoModule { }

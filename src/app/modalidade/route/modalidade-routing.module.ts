@@ -4,8 +4,13 @@ import { ModalidadeCreateComponent } from '../modalidade-create/modalidade-creat
 import { ModalidadeDeleteComponent } from '../modalidade-delete/modalidade-delete.component';
 import { ModalidadeUpdateComponent } from '../modalidade-update/modalidade-update.component';
 import { ModalidadeService } from '../service/modalidade.service';
+import { AppComponent } from 'src/app/app.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    component: AppComponent
+  },
   {
     path: 'create',
     component: ModalidadeCreateComponent,
@@ -33,4 +38,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class ModalidadeRoutingModule { }

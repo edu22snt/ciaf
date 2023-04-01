@@ -10,7 +10,7 @@ import { LoginListComponent } from './login/login-list/login-list.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'principal',
     component: AppComponent
   },
   {

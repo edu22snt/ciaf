@@ -1,18 +1,34 @@
-<p-table [value]="alunos" [tableStyle]="{ 'min-width': '50rem' }">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Code</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Quantity</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-aluno>
-        <tr>
-            <td>{{ aluno.nome }}</td>
-            <td>{{ aluno.telefone }}</td>
-            <td>{{ aluno.dataNascimento }}</td>
-            <td>{{ aluno.ativo }}</td>
-        </tr>
-    </ng-template>
-</p-table>
+<div style="padding-top: 3%; text-align: center;">
+    <h2>Listar Alunos</h2>
+</div>
+<div style="text-align: right;">
+    <p-button routerLink="createAluno" icon="pi pi-plus"></p-button>
+</div>
+<div style="padding-top: 1%;">
+    <p-table [value]="alunos" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Data de Nascimento</th>
+                <th>Modalidades</th>
+                <th>Situação</th>
+                <th>Ações</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-aluno>
+            <tr>
+                <td>{{ aluno.nome }}</td>
+                <td>{{ aluno.telefone }}</td>
+                <td>{{ aluno.dataNascimento }}</td>
+                <td>{{ aluno.modalidades }}</td>
+                <td>{{ aluno.ativo }}</td>
+                <td></td>
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+
+<div style="padding-top: 1%; text-align: right;">
+    <p-button routerLink="" label="Voltar" icon="pi pi-arrow-left" styleClass="p-button-secondary"></p-button>
+</div>
