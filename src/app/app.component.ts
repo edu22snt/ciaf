@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  //constructor(private primengConfig: PrimeNGConfig){}
+
   title = 'ciaf';
+  isAdimin = true;
 }

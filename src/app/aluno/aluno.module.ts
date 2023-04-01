@@ -4,7 +4,7 @@ import { AlunoCreateComponent } from './aluno-create/aluno-create.component';
 import { AlunoDeleteComponent } from './aluno-delete/aluno-delete.component';
 import { AlunoListComponent } from './aluno-list/aluno-list.component';
 import { AlunoUpdateComponent } from './aluno-update/aluno-update.component';
-
+import { TableModule } from 'primeng/table';
 @NgModule({
   declarations: [
     AlunoCreateComponent,
@@ -13,7 +13,8 @@ import { AlunoUpdateComponent } from './aluno-update/aluno-update.component';
     AlunoUpdateComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TableModule
   ]
 })
 export class AlunoModule { }

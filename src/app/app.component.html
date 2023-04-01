@@ -9,54 +9,42 @@
     <span>Centro Integrado de Atividades Físicas</span>
   </div>
   <div style="padding-left: 5%;"></div>
-  
-  <div class="spaceButtonAdmin">
-    <button
-      class="sizeButtonAdmin btn btn-primary"
-      type="button"
-      routerLink="funcionario"
-      >
-      Funcionário
-    </button>
-  </div>
 
   <div class="spaceButtonAdmin">
+    <p-button routerLink="agenda" label="Agenda"></p-button>
+  </div>
+
+  <div class="spaceButtonAdmin" *ngIf="isAdimin">
+    <p-button routerLink="funcionario" label="Funcionário"></p-button>
+  </div>
+
+  <div class="spaceButtonAdmin" *ngIf="isAdimin">
     <button
       class="sizeButtonAdmin btn btn-primary"
       type="button"
       routerLink="aluno"
       >
-      Aluno
+      <span>Aluno</span>
     </button>
   </div>
 
-  <div class="spaceButtonAdmin">
-    <button
-      class="sizeButtonAdmin btn btn-primary"
-      type="button"
-      routerLink="financeiro"
-      >
-      Financeiro
-    </button>
-  </div>
-
-  <div class="spaceButtonAdmin">
+  <div class="spaceButtonAdmin" *ngIf="isAdimin">
     <button
       class="sizeButtonAdmin btn btn-primary"
       type="button"
       routerLink="modalidade"
       >
-      Modalidade
+      <span>Modalidade</span>
     </button>
   </div>
 
-  <div class="spaceButtonAdmin">
+  <div class="spaceButtonAdmin" *ngIf="isAdimin">
     <button
       class="sizeButtonAdmin btn btn-primary"
       type="button"
-      routerLink="agenda"
+      routerLink="financeiro"
       >
-      Agenda
+      <span>Financeiro</span>
     </button>
   </div>
 

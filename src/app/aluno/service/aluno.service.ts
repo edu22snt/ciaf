@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Aluno, IAluno } from '../aluno.model';
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +7,9 @@ import { Injectable } from '@angular/core';
 export class AlunoService {
 
   constructor() { }
+
+  getAll():void { //Aluno[] {
+    
+    //return Aluno;
+  }
 }

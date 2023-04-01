@@ -9,6 +9,8 @@ import { FuncionarioModule } from './funcionario/funcionario.module';
 import { LoginModule } from './login/login.module';
 import { ModalidadeModule } from './modalidade/modalidade.module';
 import { AgendaModule } from './agenda/agenda.module';
+import { ButtonModule } from 'primeng/button';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,12 @@ import { AgendaModule } from './agenda/agenda.module';
     FuncionarioModule,
     LoginModule,
     ModalidadeModule,
-    AgendaModule
+    AgendaModule,
+    ButtonModule,
+    TableModule
+  ],
+  exports:[
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
