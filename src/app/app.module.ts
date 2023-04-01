@@ -3,22 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { AlunoComponent } from './aluno/aluno.component';
-import { ProfessorComponent } from './professor/professor.component';
-import { FinanceiroComponent } from './financeiro/financeiro.component';
+import { AlunoModule } from './aluno/aluno.module';
+import { FinanceiroModule } from './financeiro/financeiro.module';
+import { FuncionarioModule } from './funcionario/funcionario.module';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    AlunoComponent,
-    ProfessorComponent,
-    FinanceiroComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AlunoModule,
+    FinanceiroModule,
+    FuncionarioModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
