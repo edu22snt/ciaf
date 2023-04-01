@@ -1,6 +1,9 @@
+import { IModalidade } from "../modalidade/modalidade.model";
+
 export interface IAluno {
     id?: number,
     nome?: string,
+    nomeResponsavel?: string | null,
     telefone?: string,
     email?: string;
     dataNascimento?: Date,
@@ -8,15 +11,16 @@ export interface IAluno {
     cep?: string,
     cidade?: string,
     estado?: string,
-    esportes?: string,
+    modalidade?: IModalidade[],
     ativo?: boolean,
-    dataInativo?: Date
+    dataInativo?: Date | null
 }
 
 export class Aluno implements IAluno {
     constructor(
         public id?: number,
         public nome?: string,
+        public nomeResponsavel?: string | null,
         public telefone?: string,
         public email?: string,
         public dataNascimento?: Date,
@@ -24,8 +28,8 @@ export class Aluno implements IAluno {
         public cep?: string,
         public cidade?: string,
         public estado?: string,
-        public esportes?: string,
+        public modalidade?: IModalidade[],
         public ativo?: boolean,
-        public dataInativo?: Date
+        public dataInativo?: Date | null
     ){}
 }

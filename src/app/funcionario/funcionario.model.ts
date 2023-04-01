@@ -1,3 +1,5 @@
+import { IModalidade } from "../modalidade/modalidade.model";
+
 export interface IFuncionario {
     id?: number,
     nome?: string,
@@ -8,7 +10,7 @@ export interface IFuncionario {
     cep?: string,
     cidade?: string,
     estado?: string,
-    esportes?: string,
+    modalidade?: IModalidade[],
     ativo?: boolean,
     dataInativo?: Date,
 }
@@ -24,7 +26,7 @@ export class Aluno implements IFuncionario {
         public cep?: string,
         public cidade?: string,
         public estado?: string,
-        public esportes?: string,
+        public modalidade?: IModalidade[],
         public ativo?: boolean,
         public dataInativo?: Date
     ){}

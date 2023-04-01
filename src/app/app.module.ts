@@ -7,10 +7,12 @@ import { AlunoModule } from './aluno/aluno.module';
 import { FinanceiroModule } from './financeiro/financeiro.module';
 import { FuncionarioModule } from './funcionario/funcionario.module';
 import { LoginModule } from './login/login.module';
+import { ModalidadeModule } from './modalidade/modalidade.module';
+import { AgendaModule } from './agenda/agenda.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,9 @@ import { LoginModule } from './login/login.module';
     AlunoModule,
     FinanceiroModule,
     FuncionarioModule,
-    LoginModule
+    LoginModule,
+    ModalidadeModule,
+    AgendaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
