@@ -25,6 +25,18 @@
     flex: 1;
   }
 
+  .spaceButtonAdmin {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .sizeButtonAdmin {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+
+
   .toolbar {
     position: absolute;
     top: 0;
